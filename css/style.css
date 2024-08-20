@@ -1,0 +1,183 @@
+@font-face {
+    font-family: 'klinic-slab-bold';
+    src: url('../fonts/KlinicSlabBold.otf');
+}
+
+@font-face {
+    font-family: 'klinic-slab-it';
+    src: url('../fonts/KlinicSlabBookIt.otf');
+}
+
+
+@font-face {
+    font-family: 'klinic-slab';
+    src: url('../fonts/KlinicSlabBook.otf');
+}
+
+@font-face {
+    font-family: 'klinic-slab-medium';
+    src: url('../fonts/KlinicSlabMedium.otf');
+}
+
+@font-face {
+    font-family: 'klinic-slab-light';
+    src: url('../fonts/KlinicSlabLight.otf');
+}
+
+@font-face {
+    font-family: 'klinic-slab-light-it';
+    src: url('../fonts/KlinicSlabLightIt.otf');
+}
+
+body {
+    font-family: 'klinic-slab';
+    background-color: #efefef75;
+    color: #444;
+}
+
+b {
+    font-family: 'klinic-slab-medium';
+}
+
+i {
+    font-family: 'klinic-slab-it';
+}
+
+a {
+    color: steelblue;
+}
+
+.text-light a {
+    color: skyblue;
+}
+
+.img-max {
+    max-width: 200px;
+    width:100%;
+}
+
+.light {
+    color: #888 !important;
+    font-family: 'klinic-slab-light';
+}
+
+.light > i, i > .light {
+    font-family: 'klinic-slab-light-it';
+}
+
+h1 > small {
+    font-size: .475em;
+}
+
+.fp-tooltip{
+    color: #444 !important;
+    line-height: 1.1;
+    background-color: rgb(247, 247, 247);
+    box-shadow: 
+        0 0 15px rgb(247, 247, 247), 
+        0 0 10px rgb(247, 247, 247),
+        0 0 5px rgb(247, 247, 247),
+        0 0 2px rgb(247, 247, 247);
+    padding: .20em !important;
+    margin-top: -0.1em;
+}
+
+.fp-bottom, .fp-top {
+    text-align: center;
+}
+
+.section, .slide {
+    background-size: cover;
+    background-position: center;
+}
+
+.bg-sunset {
+    background-image: url('images/collins_sunset.jpeg');
+}
+
+.fp-watermark a {
+    background: none;
+    color: #ffffff75 !important;
+}
+
+code {
+    font-family: 'Courier New', Courier, monospace;
+    color: steelblue;
+}
+
+
+/* credit: https://christopheraue.net/design/fading-pages-on-load-and-unload */
+#fader {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    z-index: 999999;
+    pointer-events: none;
+    background: #efefef;
+    animation-duration: 300ms;
+    animation-timing-function: ease-in-out;
+}
+
+@keyframes fade-out {
+    from { opacity: 1 }
+      to { opacity: 0 }
+}
+
+@keyframes fade-in {
+    from { opacity: 0 }
+      to { opacity: 1 }
+}
+
+#fader.fade-out {
+    opacity: 0;
+    animation-name: fade-out;
+}
+
+#fader.fade-in {
+    opacity: 1;
+    animation-name: fade-in;
+}
+
+.navbar {
+    position: fixed;
+    width: 100%;
+    z-index: 9;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    top:0px;
+}
+
+.my-arrow{
+    font-size: 4.5em;
+    margin-top: -48px;
+    opacity: 0.3;
+    transition: opacity 0.3s ease;
+}
+
+.fp-slidesNav {
+    opacity: 0.3;
+    transition: opacity 0.3s ease;
+}
+
+.my-arrow:hover, .fp-slidesNav:hover {
+    opacity: 1;
+}
+
+.fp-prev {
+    margin-left: 0.75em;
+}
+
+.fp-next {
+    margin-right: 0.75em;
+}
+
+.pub + .pub {
+    padding-top: 1.5em;
+}
+
+.form-check, .form-check-input, .form-check-label {
+    cursor: pointer;
+}
