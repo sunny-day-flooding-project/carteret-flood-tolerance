@@ -1,0 +1,379 @@
+<!DOCTYPE html>
+<html>
+<head>
+
+    <!-- no index yet -->
+    <meta name="robots" content="noindex, nofollow">
+
+    <title>Chronic coastal flooding tolerance in rural North Carolina</title>
+
+    <link rel="icon" type="image/x-icon" href="SDFP_fav.png">
+
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="We asked rural communities how they are dealing with chronic flooding from changes in tides, wind, and rainfall.">
+    
+    <link rel="image_src" href="collins_croaker.jpg">
+    
+    <meta property="og:type" content="article">
+    <meta property="og:title" content="Chronic coastal flooding tolerance in rural North Carolina">
+    <meta property="og:image" content="collins_croaker.jpg">
+    <meta property="og:description" content="HWe asked rural communities how they are dealing with chronic flooding from changes in tides, wind, and rainfall.">
+    
+    <meta name="twitter:card" content="summary_large_image">
+    <meta name="twitter:title" content="Chronic coastal flooding tolerance in rural North Carolina">
+    <meta name="twitter:description" content="We asked rural communities how they are dealing with chronic flooding from changes in tides, wind, and rainfall.">
+    <meta name="twitter:image" content="collins_croaker.jpg">
+
+    <!-- <script type="application/ld+json">
+        {"@context":"https://schema.org","@type":"WebSite","name":"James P. Collins — social scientist and geographer","url":"https://www.jpcollins.me"}
+    </script> -->
+
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/fullPage.js/4.0.25/fullpage.css" integrity="sha512-earFJuyxuk1UIfnUubV3DGk2ysSejjmhMPb/4OXsqII9qmIbEwa1AaXrTqo4ivYizpbfyjXFZi6wENs94/BKWQ==" crossorigin="anonymous" referrerpolicy="no-referrer" media='screen and (min-width: 768px)'>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+    <link rel="stylesheet" href="../css/style.css">
+    <!-- article specific -->
+    <link rel="stylesheet" href="style.css">
+
+    <!-- leaflet -->
+    <link rel="stylesheet" href="https://unpkg.com/leaflet@1.9.4/dist/leaflet.css" integrity="sha256-p4NxAoJBhIIN+hmNHrzRCf9tD/miZyoHS5obTRR9BMY=" crossorigin="" />
+    <script src="https://unpkg.com/leaflet@1.9.4/dist/leaflet.js" integrity="sha256-20nQCchB9co0qIjJZRGuk2/Z9VM+kNiyxNV1lvTlZBo=" crossorigin=""></script>
+    
+    <!-- Leaflet.ResetView -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@drustack/leaflet.resetview/dist/L.Control.ResetView.min.css">
+    <script src="https://cdn.jsdelivr.net/npm/@drustack/leaflet.resetview/dist/L.Control.ResetView.min.js"></script>
+
+</head>
+<body>
+
+    <!-- image lightbox -->
+    <div id="lightbox"></div>
+    
+    <svg id="fader"></svg>
+    <script src="../js/faderInit.js"></script>
+
+    <!-- Nav bar -->
+    <nav class="navbar navbar-expand-lg navbar-dark bg-dark d-none" id="nav-bar">
+        <a class="navbar-brand" href="https://tarheels.live/sunny/" target="_blank">
+            <img src="SDFP_on-dark-2_v3.png" height="30" alt="">
+        </a>
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarNav">
+            <ul class="navbar-nav">
+                <li class="nav-item active">
+                    <a class="nav-link" href="#">Sunny Day Flooding Project</a>
+                </li>
+            </ul>
+        </div>
+    </nav>
+
+    <div id="fullpage">
+
+        <div class="section" id="section-1">
+            <video class="overlay-video" loop muted="true" playsinline data-autoplay>
+                <source src="collins_crow_hill.mp4" type="video/mp4"></source>
+            </video>
+            <video class="img-fluid pb-5" id="backup-video" loop muted muted="true" playsinline autoplay>
+                <source src="collins_crow_hill_light.mp4" type="video/mp4"></source>
+            </video>
+            <div class="container layer">
+                <div class="row">
+                    <div class="col-lg-5 px-sm-5 px-lg-3 mb-3 py-xs-5 py-lg-0">
+                        <h1>Chronic coastal flooding tolerance in rural North Carolina</h1>
+                        <h5>How are people dealing with increasing chronic flooding risk from higher tides and more intense rainfall?</h5>
+                        <p>James P. Collins, Ryan McCune &CenterDot; August 2024</p>
+                        <p><a href="https://tarheels.live/sunny/" target="_blank"><img src="SDFP_on-dark-2_v3.png" class="brand" width="40%" alt=""></a></p>
+                        <hr>
+                    </div>
+                    <div class="col-lg-7 px-sm-5 px-lg-3 mb-3">
+                        <p>Chronic coastal flooding, also known as "high-tide flooding" or "sunny day flooding," occurs without major events like hurricanes.<sup><a href="#refs">1</a></sup>
+                            Often seen as a minor issue, it can disrupt daily life, lead to economic losses, and damage property.<sup><a href="#refs">2, 3</a></sup> </p>
+                        <p>To understand how chronic coastal flooding affects rural communities, researchers in the <a href="https://tarheels.live/sunny/" target="_blank" title="A joint research effort between researchers at NC State Department of Civil, Construction, and Environmental Engineering and UNC Chapel Hill Department of City and Regional Planning">Sunny Day Flooding Project</a> are studying a group of towns in eastern Carteret County, North Carolina.</p>
+                        <p>We installed five flooding sensors in Carteret County. Four are in a region called Down East (North River Bridge, Davis, Sea Level, and Cedar Island). One is in Beaufort on Front Street. These sensors capture steret conditions and water levels. We've used them to measure the number of days roads were impacted by chronic coastal flooding.</p>
+                        <p>In June and July 2024, we interviewed people about chronic coastal flooding. We asked how they cope at home, work, and in their communities. Our interviews included residents and professionals from education, agriculture, parks, public safety, and utilities.</p>
+                        <p>We found that: (1) chronic coastal flooding is now impacting communities, (2) people can tolerate more flooding, and (3) flood tolerance is more sensitive to flood frequency than depth. Also, (4) tolerating flooding is tied to strong desires to stay in place.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="section">
+            <div class="container layer">
+                <div class="row">
+                    <div class="row">
+                        <div class="col-lg-12 px-sm-5 px-lg-3 mb-3">
+                            <h3>We talked to 24 residents living in ten different communities</h3>
+                        </div>
+                    </div>
+                    <div class="row">
+                        <div class="col-lg-3 px-sm-5 px-lg-3">
+                            <p>We spoke with 22 people in eastern Carteret County about chronic coastal flooding. This group included 16 residents and 6 experts from education, agriculture, parks, public safety, and utilities. They shared how the flooding impacts their lives and how they cope.</p>
+                            <p class="mapped-places-container">Our interviews included residents of 
+                                <span class="mapped-place">Beaufort</span>, 
+                                <span class="mapped-place">Cedar Island</span>, 
+                                <span class="mapped-place">Davis</span>, 
+                                <span class="mapped-place">Gloucester</span>, 
+                                <span class="mapped-place">Harkers Island</span>, 
+                                <span class="mapped-place">Marshallberg</span>, 
+                                <span class="mapped-place">Sea Level</span>, 
+                                <span class="mapped-place">Straits</span>, and 
+                                <span class="mapped-place">Williston</span>. 
+                                Our respondents also knew about flooding events in 
+                                <span class="mapped-place">Merrimon</span>, 
+                                <span class="mapped-place">Morehead City</span>, 
+                                <span class="mapped-place">North River</span>, and 
+                                <span class="mapped-place">Stacy</span>.
+                            </p>
+                            <p>This map shows where residents reported <span class="text-primary">flooding roads</span> and highlights <span class="text-danger">essential places</span> like workplaces, grocery stores, and churches.</p>
+                            <p>These mapped areas and flooded roads show that <b>chronic coastal flooding is already disrupting access</b> to these essential places.</p>
+                        </div>
+                        <div class="col-lg-9 px-0 mb-3">
+                            <div id="map" style="height: 70vh; overflow-clip-margin: content-box;"></div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <script src="geodata/flooding roads filtered.js"></script>
+        <script src="geodata/town labels.js"></script>
+        <script>
+            var map = L.map('map',{ 
+                zoomControl: false, 
+                attributionControl: true,
+                minZoom: 9,
+                maxBounds: [[35.5, -75],[34, -77.75]],
+                maxBoundsViscosity: 1.0
+            }).setView([34.86, -76.6], 10);
+            // map.dragging.disable();
+            // map.scrollWheelZoom.disable();
+
+            var Esri_WorldGrayCanvas = L.tileLayer('https://server.arcgisonline.com/ArcGIS/rest/services/Canvas/World_Light_Gray_Base/MapServer/tile/{z}/{y}/{x}', {
+                attribution: 'Tiles &copy; Esri &mdash; Esri, DeLorme, NAVTEQ',
+                maxZoom: 16,
+                opacity: 0.6
+            });
+            var Esri_WorldTopoMap = L.tileLayer('https://server.arcgisonline.com/ArcGIS/rest/services/World_Topo_Map/MapServer/tile/{z}/{y}/{x}', {
+                attribution: 'Tiles &copy; Esri'
+            });
+            Esri_WorldTopoMap.addTo(map);
+
+            var imageOverlay = L.imageOverlay('geodata/point heatmap.png',
+                L.latLngBounds([[35.042907000, -76.284022000], [34.569861000, -76.885788000]]), {
+                opacity: 0.6,
+                alt: 'heatmap'
+            }).addTo(map);
+
+            var roadLayer = new L.GeoJSON(floodingRoads,{
+                onEachFeature: (f,l) => {
+                    l.bindTooltip(f.properties["label"]);
+                }
+            }).addTo(map);
+
+            townLabelLayers = {}
+            var labelLayer = new L.GeoJSON(townLabels,{
+                pointToLayer: function (f, ll) {
+                    return L.circleMarker(ll, {
+                        color: '#444',
+                        fillColor: '#444',
+                        fillOpacity: 0.1,
+                        opacity: 0.3,
+                        radius: 10
+                    });
+                },
+                onEachFeature: (f,l) => {
+                    l.bindTooltip(f.properties["label"]);
+                    townLabelLayers[f.properties["label"]] = l;
+                }
+            }).addTo(map);
+
+            var resetControl = L.control.resetView({
+                position: "topright",
+                title: "Reset map",
+                latlng: [34.86, -76.6],
+                zoom: 10,
+            }).addTo(map);
+
+            resetControl.getContainer().children[0].onclick = (e)=>{e.preventDefault()} // fix bug, scrolls to page top
+
+            document.querySelectorAll('.mapped-place').forEach((s) => {
+                s.addEventListener("mouseover", (e)=>{
+                    layer = townLabelLayers[s.textContent]
+                    layer.openTooltip();
+                    map.panTo(layer.getLatLng());
+                });
+                s.addEventListener("mouseout", (e)=>{
+                    townLabelLayers[s.textContent].closeTooltip();
+                });
+            });
+
+            document.querySelectorAll('.mapped-places-container').forEach((s) => {
+                s.addEventListener("mouseout", (e)=>{
+                    resetControl._resetView();
+                });
+            });
+        </script>
+
+        <div class="section">
+            <div class="container">
+                <div class="row">
+                    <div class="col-lg-12 px-sm-5 px-lg-3 mb-3">
+                        <h3><span class="light">1.</span> Chronic coastal flooding is impacting communities now</h3>
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col-lg-4 px-sm-5 px-lg-3">
+                        <p>Most people know about chronic coastal flooding. Many see flooding becoming more common and intense. </p>
+                        <p>Our sensors show some roads Down East were flooded for <b>over 100 days in a year</b>. Local Facebook groups share photos of water overflowing onto highways. Interviewees also showed us pictures of water on roads and in their yards.</p>
+                        <p>These coastal communities have always lived near water. However, this new flooding is forcing people to adjust their routines, behaviors, and homes to deal with water in unexpected places &mdash; "in the collards," as folks say.</p>
+                    </div>
+                    <div class="col-lg-8 px-sm-5 px-lg-3 mb-3">
+                        <figure class="figure">
+                            <img class="figure-img img-fluid img-zoom" src="collins_croaker.jpg" alt="A driver avoids high-tide flooding water on a road.">
+                            <figcaption class="figure-caption">A driver in Davis, NC, avoids saltwater from high-tide flooding.</figcaption>
+                        </figure>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="section">
+            <div class="container">
+                <div class="row">
+                    <div class="col-lg-12 px-sm-5 px-lg-3 mb-3">
+                        <h3><span class="light">2.</span> People are accommodating current risk and can tolerate more flooding</h3>
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col-lg-4 px-sm-5 px-lg-3">
+                        <p>Residents of Down East are preparing for flooding. <b>Accommodating risk</b> means using flood-prone areas safely.<sup><a href="#refs">4</a></sup> This includes changes to buildings and daily habits.</p>
+                        <p>Regarding buildings, most residents considered raising their homes; about half did. We also saw elevated planter beds, shingles in driveways, dry storage solutions, and new ditches.</p>
+                        <p>For daily habits, most stay home during floods to avoid rusting cars. Those working in Morehead City sometimes stay in hotels or with friends when US-70 and NC-12 are flooded. Some noted benefits from flooding, like better birdwatching in Cedar Island National Wildlife Refuge and walking through shallow water in quieter streets.</p>
+                        <p>Actions to prepare for severe hurricane-driven flooding, like home elevations and extra supplies, protect against chronic flooding too.</p>
+                    </div>
+                    <div class="col-lg-8 px-sm-5 px-lg-3 mb-3">
+                        <figure class="figure">
+                            <img class="figure-img img-fluid img-zoom" src="collins_water_under.jpg" alt="Water can be seen under a house sitting on short brick pilings.">
+                            <figcaption class="figure-caption">Water sits under a house in Davis, NC, after a spate of summer thunderstorms.</figcaption>
+                        </figure>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="section">
+            <div class="container">
+                <div class="row">
+                    <div class="col-lg-12 px-sm-5 px-lg-3 mb-3">
+                        <h3><span class="light">3.</span> Flooding tolerance is more sensitive to frequency than depth</h3>
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col-lg-4 px-sm-5 px-lg-3">
+                        <p>We also asked people about their future flooding tolerance. <b>Flooding tolerance</b> is how much flooding someone can accept before acting.<sup><a href="#refs">5</a></sup> Early results show residents believe their current measures are enough for deeper floods. However, more frequent flooding would be a problem.</p>
+                        <p>Many residents felt their high-clearance vehicles, elevated homes, and rural living would protect them from floods of about a foot deep. But, if floods happened more often &mdash; weekly for some, monthly for others &mdash; they would need to rethink their plans or move.</p>
+                        <p>Chronic coastal flooding might be causing some to move, but we only found one example. Family factors also played a role. Most others, however, said flooding didn't affect their decision to stay or leave.</p>
+                    </div>
+                    <div class="col-lg-8 px-sm-5 px-lg-3 mb-3">
+                        <figure class="figure">
+                            <img class="figure-img img-fluid img-zoom" src="collins_boat_launch.jpg" alt="A set of pickup trucks parked in shallow water at a public boat launch near Davis, NC.">
+                            <figcaption class="figure-caption">Shallow water pools up at the Oyster Creek boat launch near Davis, NC, after heavy rains.</figcaption>
+                        </figure>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="section">
+            <div class="container">
+                <div class="row">
+                    <div class="col-lg-12 px-sm-5 px-lg-3 mb-3">
+                        <h3><span class="light">4.</span> Flood tolerance is entangled with voluntary immobility and other trends</h3>
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col-lg-4 px-sm-5 px-lg-3">
+                        <p>We found that our respondents showed a strong preference to stay put, linked to their tolerance for flooding. This <b>voluntary immobility</b> means choosing to remain in one's current home or job, yet it often gets overlooked in studies.<sup><a href="#refs">6</a></sup> Many residents expressed a desire to die in their current homes. Living with family and friends on ancestral land shows a strong commitment to facing flooding challenges.</p>
+                        <p>Economic trends also affect flooding risk tolerance and the choice to stay. As job opportunities decline, more people are commuting to bigger cities, increasing their exposure to flooded roads. The focus on building coastal vacation homes makes it tough for young adults in rural areas. They struggle to build affordable, flood-resistant homes suitable for raising families.</p>
+                        <p>Social and demographic trends affect people's ability to tolerate flooding and stay in their homes. The population is aging as young people leave for jobs or can't afford housing. Some older residents say they might have to move for better care, as local services are lacking. Without care that involves different age groups, enduring flooding becomes harder for many.</p>
+                    </div>
+                    <div class="col-lg-8 px-sm-5 px-lg-3 mb-3">
+                        <figure class="figure">
+                            <img class="figure-img img-fluid img-zoom" src="collins_HI_house.jpg" alt="A traditional wood-sided fishing housing on Harkers Island, NC.">
+                            <figcaption class="figure-caption">A traditional wood-sided house on Harkers Island, NC.</figcaption>
+                        </figure>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="section">
+            <div class="container">
+                <div class="row">
+                    <div class="col-lg-12 px-sm-5 px-lg-3 mb-3">
+                        <h3>Conclusions</h3>
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col-lg-4 px-sm-5 px-lg-3">
+                        <p>Coastal communities in eastern Carteret County cherish their deep-rooted connections to land, sea, and kin. Despite policy setbacks, natural disasters, and encroaching development, they've preserved their heritage.</p>
+                        <p>While abrupt changes &mdash; a hurricane-carved inlet, shuttered fish plant, or merged schools &mdash; grab attention, chronic flooding creeps in quietly. This insidious threat disrupts daily routines, straining mobility, livelihoods, and elderly care without fanfare.</p>
+                        <p>Our mission: chronicle this slow-motion crisis and its ripple effects. By capturing locals' stories, we aim to empower them in shaping their future. We're indebted to their openness and resolve to stand by them as they navigate these rising waters.</p>
+                        <p>But for now, we're mommicked. 
+                            <i class="bi bi-water"></i>
+                            <!-- <i class="bi bi-droplet-fill"></i> -->
+                        </p>
+                    </div>
+                    <div class="col-lg-8 px-sm-5 px-lg-3 mb-3">
+                        <figure class="figure">
+                            <img class="figure-img img-fluid img-zoom" src="collins_cast_net.jpg" alt="A man throws a cast net into the waters of North River on the side of US-70.">
+                            <figcaption class="figure-caption">People can almost always be seen throwing cast nets into North River.</figcaption>
+                        </figure>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="section bg-secondary fp-auto-height text-light">
+            <div class="container py-5">
+                <div class="row">
+                    <div class="col-lg-8 px-sm-5 px-lg-3">
+                        <h3>References</h3>
+                        <ol>
+                            <li>Sweet, William V, Robert E Kopp, Christopher P Weaver, Jayantha Obeysekera, Radley M Horton, E Robert Thieler, and Chris Zervas. 2017. "Global and Regional Sea Level Rise Scenarios for the United States." NOAA Technical Report NOS 01. Silver Spring, MD: National Oceanic and Atmospheric Administration, National Ocean Service.</li>
+                            <li>Hino, Miyuki, Samanthe Tiver Belanger, Christopher B. Field, Alexander R. Davies, and Katharine J. Mach. 2019. "High-Tide Flooding Disrupts Local Economic Activity." Science Advances 5 (2): eaau2736. https://doi.org/10.1126/sciadv.aau2736.</li>
+                            <li>Moftakhari, Hamed R., Amir AghaKouchak, Brett F. Sanders, and Richard A. Matthew. 2017. "Cumulative Hazard: The Case of Nuisance Flooding." Earth's Future 5 (2): 214-23. https://doi.org/10.1002/2016EF000494.</li>
+                            <li>Doberstein, Brent, Joanne Fitzgibbons, and Carrie Mitchell. 2019. "Protect, Accommodate, Retreat or Avoid (PARA): Canadian Community Options for Flood Disaster Risk Reduction and Flood Resilience." Natural Hazards 98 (1): 31-50. https://doi.org/10.1007/s11069-018-3529-z.</li>
+                            <li>Tonn, Gina, Seth Guikema, and Benjamin Zaitchik. 2020. "Simulating Behavioral Influences on Community Flood Risk under Future Climate Scenarios." Risk Analysis 40 (4): 884-98. https://doi.org/10.1111/risa.13428.</li>
+                            <li>Schewel, Kerilyn. 2020. "Understanding Immobility: Moving Beyond the Mobility Bias in Migration Studies." International Migration Review 54 (2): 328-55. https://doi.org/10.1177/0197918319831952.</li>
+                        </ol>
+                    </div>
+                    <div class="col-lg-4 px-sm-5 px-lg-3">
+                        <h3>Author contributions</h3>
+                        <p>James P. Collins: conceptualization, investigation, methodology, visualization, writing - original draft.</p>
+                        <p>Ryan McCune: conceptualization, investigation, methodology, writing - review and editing.</p>
+                        <!-- <p>Miyuki Hino: conceptualization, supervision, funding acquisition, project administration, supervision.</p> -->
+                        <!-- <p>Katherine Anarde: conceptualization, supervision, funding acquisition, project administration, supervision.</p> -->
+                        <small>Webpage source published under the terms of the <a href="https://www.gnu.org/licenses/gpl-3.0.en.html" target="_blank">GNU GPL 3.0 license</a>. Article text &copy; the authors. Cover video &copy; James P. Collins</small>
+                        <hr>
+                        <p class="text-center">Part of the <a href="https://tarheels.live/sunny/" target="_blank">Sunny Day Flooding Project</a>.<br><br>
+                            <a href="https://tarheels.live/sunny/" target="_blank"><img src="SDFP_on-dark-2_v3.png" width="40%" alt=""></a></p>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+    </div>
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/fullPage.js/4.0.25/fullpage.min.js" integrity="sha512-rc+ezQrlvTWQ1bOJtmCN7Fm/GyfhIBX9eOZhbQ7BtSpnG8SgrafIjsl0jWh0a/zLsLj8wbzv2+vkAyZtYn7xwg==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script>
+    <script src="../js/fader.js"></script>
+    <script src="../js/copyright.js"></script>
+
+    <script>
+        navTooltips = ['Intro', 'Study', 'Impacts', 'Tolerance', 'Immobility','Trends','Conclusions','References'];
+        pageAnchors = ['','study','impacts','tolerance','immobility','trends','conclusions','refs'];
+    </script>
+    <script src="init.js"></script>
+</body>
+</html>

@@ -1,0 +1,6 @@
+*.ignore.*
+*.geojson
+*.qmd
+*.aux.xml
+*.tif
+.DS_Store
